@@ -30,7 +30,7 @@ jobs:
     - name: maven-settings
       uses: s4u/maven-settings-action@v2
       with:
-        servers: '[{"id": "nuxeo-studio", "username": "${{secrets.STUDIO_LOGIN}}", "password": "${{secrets.STUDIO_TOKEN}}"}, {"id": "maven-public", "username": "${{secrets.MAVEN_PRIVATE_LOGIN}}", "password": "${{secrets.MAVEN_PRIVATE_PASSWORD}}"}, {"id": "maven-internal", "username": "${{secrets.MAVEN_PRIVATE_LOGIN}}", "password": "${{secrets.MAVEN_PRIVATE_PASSWORD}}"}]'
+        servers: '[{"id": "nuxeo-studio", "username": "${{secrets.STUDIO_LOGIN}}", "password": "${{secrets.STUDIO_TOKEN}}"}, {"id": "maven-public", "username": "${{secrets.MAVEN_PRIVATE_LOGIN}}", "password": "${{secrets.MAVEN_PRIVATE_PASSWORD}}"}, {"id": "maven-private", "username": "${{secrets.MAVEN_PRIVATE_LOGIN}}", "password": "${{secrets.MAVEN_PRIVATE_PASSWORD}}"}]'
     - name: Cache the Maven packages to speed up build
       uses: actions/cache@v1
       with:
