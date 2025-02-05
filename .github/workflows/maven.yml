@@ -42,7 +42,7 @@ jobs:
     - name: Save artifact
       run: mkdir staging && cp nuxeo-custom-operation-aws-package/target/nuxeo-custom-operation-aws-package*.zip staging
     - name: Persist artifact  
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v4
       with:
         name: nuxeo-custom-operation-aws-package
         path: staging
