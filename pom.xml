@@ -22,6 +22,7 @@
 
   <modules>
     <module>nuxeo-custom-operation-aws-core</module>
+    <module>nuxeo-custom-operation-aws-package</module>
   </modules>
 
   <scm />
@@ -37,6 +38,11 @@
       <dependency>
         <groupId>com.acme</groupId>
         <artifactId>nuxeo-custom-operation-aws-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.acme</groupId>
+        <artifactId>nuxeo-custom-operation-aws-package</artifactId>
         <version>${project.version}</version>
       </dependency>
     </dependencies>
